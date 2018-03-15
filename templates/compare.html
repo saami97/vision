@@ -1,0 +1,24 @@
+{% extends 'kurama.html' %}
+
+{% block body %}
+<div class="app-area-right flt-right">
+<div class="folderselect">
+  <input class="inputfile" id="pre" name="pre" type="file" accept="image/*" />
+  <input class="inputfile" id="post" name="post" type="file" accept="image/*" />
+  <p style='text-align:center;font-family:"Montserrat"'><label for="pre"><i class="far fa-folder"></i>&nbsp;&nbsp; Select pre image</label>&nbsp;&nbsp;<label for="post" id="eaglevision"><i class="far fa-folder"></i>&nbsp;&nbsp; Select post image</label>
+    &nbsp;<label onclick="compare();" style="background: #3498db ;border-bottom:4px solid  #2e86c1 ;"><i class="fas fa-eye"></i>&nbsp;&nbsp; Compare </label>
+    <br /><br />Regenerate Image <input type="checkbox" name="regenerate" />
+  </p>
+</div>
+
+<div class="loader"></div>
+<div class="results">
+  <table class="resultssection" cellpadding="10">
+    <tr style="border:1px solid lightgrey">
+      <th>File Name</th>
+      <th>Score</th>
+    </tr>
+  </table>
+</div>
+</div>
+{% endblock %}

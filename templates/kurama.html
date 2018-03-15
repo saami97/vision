@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>{{ the_title }}</title>
+  <link type="text/css" rel="stylesheet" href="static/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/adapter.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body>
+
+<div class="app-area">
+  <div class="app-area-left flt-left">
+    <div class="icon-bar-wrap">
+    <div class="icon-bar">
+        <ul>
+            <li class="active"><a href="/"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+  </div>
+  </div>
+  {% block body %}
+
+  {% endblock %}
+  <div class="clear"></div>
+</div>
+
+</body>
+</html>

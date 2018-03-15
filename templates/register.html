@@ -1,0 +1,21 @@
+{% extends 'kurama.html' %}
+
+{% block body %}
+<div class="app-area-right flt-right">
+
+<div class="back">
+
+							<div class="contact-form">
+              <h1>Enter patient details</h1>
+              <p class="alert"></p>
+								<input name='firstname' class="gutter" type="text" placeholder="First Name" required>
+								<input name='lastname' type="text" placeholder="Last Name" required>
+								<input name="phone" class="gutter" type="text" placeholder="Telephone" required>
+								<input name="address" type="text" placeholder="Address" required>
+								<textarea name="details" id="" placeholder="Patient Details" required></textarea>
+								<input type="file" name="preimage" accept="image/*" />
+								<input type="submit" value="Send" onclick="RegisterPatient();">
+            </div>
+</div>
+</div>
+{% endblock %}

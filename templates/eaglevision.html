@@ -1,0 +1,22 @@
+{% extends 'kurama.html' %}
+
+{% block body %}
+<div class="app-area-right flt-right">
+<div class="folderselect">
+  <input class="inputfile" id="file" name="file" type="file" webkitdirectory mozdirectory msdirectory odirectory directory multiple/>
+  <p style='text-align:center;'><label for="file"><i class="far fa-folder"></i>&nbsp;&nbsp; Choose a folder</label>&nbsp;&nbsp;<label id="eaglevision" onclick="eagleMode();"><i class="fas fa-eye"></i>&nbsp;&nbsp; Start Eagle Vision</label></p>
+</div>
+
+<div class="loader"></div>
+<div class="results">
+<table class="resultssection" cellpadding="10">
+  <tr style="border:1px solid lightgrey">
+    <th>File Name</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+
+</table>
+</div>
+</div>
+{% endblock %}
