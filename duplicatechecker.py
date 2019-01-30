@@ -7,7 +7,7 @@ import MySQLdb as db
 
 dbConfig = {
     'user' : 'root',
-    'passwd' : 'bombaydeing27',
+    'passwd' : '',
     'host' : '127.0.0.1',
     'db' : 'eyecare'
 }
